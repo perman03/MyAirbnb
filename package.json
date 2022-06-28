@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Juan De la torre @codigoconjuan",
+  "author": "Franco Perez",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.1",
