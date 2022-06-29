@@ -1,0 +1,64 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as mx; 
+
+.barra{
+    display: none;
+
+    @include mx.tablet{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navegacion{
+        display: flex;
+        gap: 4rem;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: v.$blanco;
+
+        &:hover{
+            color: v.$primario; 
+            text-decoration: overline;
+        }
+    }
+
+   
+
+    &__nombre{
+        color: v.$primario;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .degradado-rojo{
+        background-image: radial-gradient(circle,#ffff 0,#bd1e59 100%);
+        background-size: 400% 400%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-animation: AnimationName 30s ease infinite;
+        -moz-animation: AnimationName 30s ease infinite;
+        animation: AnimationName 30s ease infinite;
+        }
+        @-webkit-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+
+   
+    
+
+}
