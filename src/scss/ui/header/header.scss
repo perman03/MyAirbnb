@@ -22,12 +22,19 @@
         transition-property: transform;
         transition-duration: .3s;
 
+        // ANIMACION
         &:hover{
-            transform: scale(1.1);
-            background-image: radial-gradient(circle,#ff385c 0,#bd1e59 100%);
-            color: v.$blanco;
-            
+                transform: scale(1.05);
+                background-image: radial-gradient(circle,#ff385c 0,#bd1e59 100%);
+                color: v.$blanco;
+            @include mx.tablet { 
+                transform: scale(1.1);
+                background-image: radial-gradient(circle,#ff385c 0,#bd1e59 100%);
+                color: v.$blanco;
+             }
         }
+
+       
 
     }
 }
