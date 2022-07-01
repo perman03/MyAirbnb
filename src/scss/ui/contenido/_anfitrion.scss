@@ -1,0 +1,61 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as mx; 
+
+.anfitrion{
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    color: v.$blanco;
+    row-gap: 15rem;
+    padding: 5rem;
+    background-image: linear-gradient(to bottom, v.$negro 0%, v.$negro 50%, transparent 50%), url(/src/img/anfitrion.jpg); 
+    background-size: 100%, 60rem;
+    background-repeat: no-repeat;
+    background-position: center, center bottom;
+
+    @include mx.telefono { 
+        background-size: 100%, 70rem;
+        background-position: center, center 200%;
+     }
+
+     @include mx.tablet { 
+        grid-template-rows: unset;
+        background-image: linear-gradient(to right, v.$negro 0%, v.$negro 45%, transparent 55%), url(/src/img/anfitrion.jpg); 
+        background-size: 100%, auto;
+        background-position: center, 50% 30%;
+        padding: 15rem 5rem;
+      }
+
+      @include mx.desktop { 
+        background-position: center, right center;
+       }
+
+    &__contenido{
+        
+        @include mx.tablet { 
+            max-width: 50%;
+         }
+
+    }
+    
+    &__texto{
+        color: v.$blanco;
+    }
+
+    &__enlace{
+
+        @include mx.boton(v.$blanco, v.$negro); 
+        border-radius: 1rem;
+        text-align: center;
+
+        &:hover{
+            transform: scale(1.05);
+            transition-duration: .3s;
+        @include mx.tablet { 
+            transform: scale(1.1);
+            transition-duration: .3s;
+         }
+    }
+
+    }
+}

@@ -18,6 +18,7 @@
         @include mx.desktop { 
             grid-template-columns: repeat(4, 1fr);
             column-gap: 2rem;
+            overflow-x: hidden;
          }
 
     }
