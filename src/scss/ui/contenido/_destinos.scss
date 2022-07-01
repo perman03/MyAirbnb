@@ -1,0 +1,36 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as mx; 
+
+.destinos{
+
+    // GRID SYSTEM
+    &__grid{
+        @include mx.grid(1, 2rem); 
+        @include mx.tablet { 
+            @include mx.grid(2, 2rem); 
+         }
+         @include mx.desktop { 
+            @include mx.grid(4, 2rem); 
+          }
+    
+    
+    }
+
+}
+
+.destino{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+
+            &__imagen{
+                width: 14rem;
+            }
+
+            &__nombre,
+            &__distancia{
+                margin: 0;
+            }
+}
