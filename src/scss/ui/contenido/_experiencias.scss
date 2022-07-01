@@ -1,0 +1,27 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as mx;
+
+.experiencias{
+
+    &__listado{
+        display: grid;
+        grid-template-columns: repeat(3, 30rem);
+        column-gap: 4rem;
+        overflow-y: hidden;
+        overflow-x: scroll;
+
+        @include mx.desktop { 
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2rem;
+            overflow-x: hidden;
+         }
+    }
+
+}
+
+.experiencia{
+    &__titulo{
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+}
