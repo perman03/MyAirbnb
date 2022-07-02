@@ -1,4 +1,4 @@
-# MyAirbnb v(1.0)
+# MyAirBNB v(1.0)
 
 My Airbnb site es un proyecto libre y pequeño donde se replica el diseño de la antigua página de Airbnb. 
 Se pone en práctica todo lo relacionado con el pre-procesador SASS y el automatizador Gulp.
