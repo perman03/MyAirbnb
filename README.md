@@ -5,12 +5,12 @@ Se pone en práctica todo lo relacionado con el pre-procesador SASS y el automat
 
 Para futuras versiones se planea agregarle lo siguiente:
 
--Slide en el Header 🎞️
+-Carrusel de imágenes en el Header 🎞️
 -Menú hamburguesa para versión móvil (responsive) 🍔
 -Más animaciones con librería CSS/JS 🖌️
 
 
-Ojalá te guste tanto como a mi. Cualquier duda puedes mandarme mensaje o si observar un error puedes darme un pull-request ❤️🤓
+Ojalá te guste tanto como a mi. Cualquier duda puedes mandarme mensaje, o si observas un error puedes darme un pull-request ❤️🤓
 
 LINK: https://my-airbnb-site.netlify.app/
 
